@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+body{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+}
+nav .btn{
+  width: 100%;
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+  color: rgb(233, 233, 233);
+
+}
+.hero h1{
+  font-family: 'Playfair Dispaly', serif;
+  font-size: 2.5rem;
+}
+span{
+  color: #D4AF37;
+}
+.btn {
+  background-color: #D4AF37;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  width: 50%;
+  transition: transform 1s ease;
+  color: rgb(17, 17, 17);
+}
+.btn:hover{
+  transform: translate(-5px);
+  background-color: #D4AF37;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+.stats p{
+  font-size: 0.7em;
+  line-height: 20px;
+}
+.image img{
+  border-radius: 10px;
+}
+.hero h1{
+    font-size: 3.2rem;
+}
+.hero .leading{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.hero-gradient {
+    background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(30,58,138,0.9) 100%);
+}
+
+.gold-accent { 
+  color: #D4AF37;
+}
+h2{
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 2.5rem;
+}
+.text{
+  font-size: 1.2rem;
+}
+.values h3, .journey h3 {
+  font-family: 'Playfair Display', sans-serif;
+}
+.values .card{
+  justify-content: center;
+  align-items: center;
+}
+.values p{
+  font-size: 1rem;
+}
+.values .gold-bg { 
+  background-color: #D4AF37; 
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+}
+.values .gold-bg span{
+  font-size: 1.5rem;
+}
+.cta-button .btn{
+  width: 100%;
+}
+.cta-button .btns{
+  background-color: transparent;
+  color: #D4AF37;
+  border: 2px solid #D4AF37;
+}
+.cta-button{
+  flex-direction: column;
+}
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    background-color: #D4AF37;
+    border-radius: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 1.25rem;
+    width: 2px;
+    height: calc(100% + 2rem);
+    background-color: rgba(212, 175, 55, 0.3);
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+.value-card {
+    background: linear-gradient(145deg, #1f2937 0%, #111827 100%);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.team-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer h5{
+    color: #D4AF37;
+  font-family: 'Poppins', sans-serif;
+}
+footer p{
+  color: gray;
+}
+footer a{
+  color: gray;
+}
+@media (min-width: 769px) {
+  nav .btn{
+    width: 15%;
+  }
+  .image img{
+    width: 90%;
+    height: 90%;
+  }
+  .hero h1{
+    font-size: 5rem;
+  }
+  .hero .leading{
+    font-size: 1.5rem;
+  }
+  .stats p{
+  font-size: 1rem;
+  line-height: 20px;
+  }
+  .values .card{
+    height: 450px;
+  }
+  .cta-button{
+    flex-direction: row;
+  }
+  .cta-button .btn{
+    width: 25%;
+  }
+}

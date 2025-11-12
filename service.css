@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+body{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+}
+nav .btn{
+  width: 100%;
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+  color: rgb(233, 233, 233);
+
+}
+.hero h1{
+  font-family: 'Playfair Dispaly', serif;
+  font-size: 2.5rem;
+}
+
+.btn {
+  background-color: #D4AF37;
+  padding: 15px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  width: 50%;
+  transition: transform 1s ease;
+  color: rgb(17, 17, 17);
+}
+.btn:hover{
+  transform: translate(-5px);
+  background-color: #D4AF37;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+.hero h1{
+    font-size: 3.2rem;
+}
+.hero .leading{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(30,58,138,0.8) 100%);
+}
+section{
+  background-color: rgba(11, 14, 24, 0.9);
+}
+.custom-card{
+  height: 350px;
+}
+.gold-accent {
+  color: #D4AF37; 
+}
+.gold-accents{
+  color: #D4AF37;
+}
+.gold-bg { 
+  background-color: #D4AF37;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35px;
+}
+h3{
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 2.5rem;
+}
+.gold-accent{
+  font-family: 'Poppins', serif;
+}
+
+.path{
+  font-family: 'Poppins', serif;
+}
+.process{
+  padding: 20px;
+  margin: 30px;
+}
+div .gold-accent{
+  font-size: 1.1rem;
+}
+.paths{
+  font-size: 0.8rem;
+  font-family: 'Poppins', serif;
+}
+.pro{
+  border-radius: 10px;
+  width: 90%;
+}
+.pro h4, .process span{
+  font-family: 'Poppins', serif;
+}
+.pro p{
+  font-size: 0.9rem;
+}
+.num{
+  font-size: 1.8rem;
+  color: black;
+}
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.testimonial-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+}
+footer h5{
+  color: #D4AF37;
+  font-family: 'Poppins', sans-serif;
+}
+footer p{
+  color: gray;
+}
+footer a{
+  color: gray;
+}
+@media (min-width: 769px) {
+  nav .btn{
+    width: 15%;
+  }
+  .image img{
+    width: 90%;
+    height: 90%;
+  }
+  .hero h1{
+    font-size: 5rem;
+  }
+  .hero .leading{
+    font-size: 1.5rem;
+  }
+  .stats p{
+  font-size: 1rem;
+  line-height: 20px;
+  }
+  .values .card{
+    height: 450px;
+  }
+  .cta-button{
+    flex-direction: row;
+  }
+  .cta-button .btn{
+    width: 25%;
+  }
+  .process{
+    display: flex;
+  }
+  .custom-card{
+    width: 400px;
+    height: 400px;
+  }
+}

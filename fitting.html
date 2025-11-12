@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veo Clothings</title>
+  <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fitting.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand fw-bold">
+        <img src="assets/images/logo-bg.png" alt="Veo Clothings Logo" style="width: 100px; margin-right: 20px;">
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item"><a href="index.html" class="nav-link mx-2">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link mx-2">About Us</a></li>
+          <li class="nav-item"><a href="service.html" class="nav-link mx-2">Our Services</a></li>
+          <li class="nav-item"><a href="index.html#contact" class="nav-link mx-2">Contact Us</a></li>
+        </ul>
+        <a href="fitting.html" class="btn fw-bold px-3">Book a Fitting</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero hero-gradient d-flex justify-content-center align-items-center" style="min-height: 85vh;">
+    <div class="text-center text-white container">
+      <h1 class="fw-bold">Let's Tailor <span class="gold-accent">Your Next</span></h1>
+      <p class="mx-auto leading">
+        Every man deserves an outfit that fits perfectly and feels powerful. <br>
+        ✂️ Custom fit | 😍 Premium Quality | 🚚 Delivery Nationwide <br>
+        Fill the form below to begin
+      </p>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="form py-5">
+    <div class="container">
+      <form id="bookForm">
+        <!-- Personal Info -->
+        <h5>Personal Information</h5>
+        <p>We'll need a few details to reach you and confirm your order</p>
+
+        <div class="mb-3">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Enter Your Name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="number">Phone Number (WhatsApp preferred)</label>
+          <input type="tel" id="number" name="number" class="form-control" placeholder="+234 XXX XXX XXXX" required>
+        </div>
+
+        <div class="mb-5">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email" required>
+        </div>
+
+        <!-- Outfit Details -->
+        <h5>Outfit Details</h5>
+        <p>Tell us what kind of outfit you want and how you'd like it made.</p>
+
+        <div class="mb-3">
+          <label for="type">Outfit Type</label>
+          <select id="type" name="type" class="form-select" required>
+            <option value="">Select an Outfit Type</option>
+            <option>Agbada</option>
+            <option>Senator</option>
+            <option>Suit</option>
+            <option>Native</option>
+            <option>Casual Wear</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="occasion">Occasion</label>
+          <select id="occasion" name="occasion" class="form-select" required>
+            <option value="">Select an Occasion</option>
+            <option>Wedding</option>
+            <option>Office</option>
+            <option>Casual</option>
+            <option>Traditional Event</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <!-- Fabric Options -->
+        <label class="mb-3 d-block">Fabrics Options</label>
+        <div class="d-flex flex-wrap gap-3">
+          <div class="form-check">
+            <input type="checkbox" id="Aso-Oke" name="fabrics" value="Aso-Oke" class="form-check-input">
+            <label for="Aso-Oke" class="form-check-label">Aso-Oke</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="wool" name="fabrics" value="Italian Wool" class="form-check-input">
+            <label for="wool" class="form-check-label">Italian Wool</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="Ankara" name="fabrics" value="Ankara" class="form-check-input">
+            <label for="Ankara" class="form-check-label">Ankara</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="silk" name="fabrics" value="Silk Brocade" class="form-check-input">
+            <label for="silk" class="form-check-label">Silk Brocade</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="adire" name="fabrics" value="Adire" class="form-check-input">
+            <label for="adire" class="form-check-label">Adire</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="cashmere" name="fabrics" value="Cashmere" class="form-check-input">
+            <label for="cashmere" class="form-check-label">Cashmere</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="linen" name="fabrics" value="Linen" class="form-check-input">
+            <label for="linen" class="form-check-label">Linen</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="velvet" name="fabrics" value="Velvet" class="form-check-input">
+            <label for="velvet" class="form-check-label">Velvet</label>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="own" name="fabrics" value="Own Fabric" class="form-check-input">
+            <label for="own" class="form-check-label">I'll provide my own Fabric</label>
+          </div>
+        </div>
+
+        <div class="mt-3 mb-4">
+          <label for="color">Fabric Color</label>
+          <input type="color" id="color" name="color" class="form-control form-control-color" value="#ffd700">
+        </div>
+
+        <!-- Measurements -->
+        <h5>Measurements</h5>
+        <p>To get your perfect fit, please fill in your key measurements.</p>
+        <div class="row g-3">
+          <div class="col-md-6"><label>Chest</label><input type="number" id="chest" name="chest" class="form-control" required></div>
+          <div class="col-md-6"><label>Shoulder</label><input type="number" id="shoulder" name="shoulder" class="form-control" required></div>
+          <div class="col-md-6"><label>Sleeve</label><input type="number" id="sleeve" name="sleeve" class="form-control" required></div>
+          <div class="col-md-6"><label>Waist</label><input type="number" id="waist" name="waist" class="form-control" required></div>
+          <div class="col-md-6"><label>Trouser Length</label><input type="number" id="trouser" name="trouser" class="form-control" required></div>
+          <div class="col-md-6"><label>Neck</label><input type="number" id="neck" name="neck" class="form-control" required></div>
+          <div class="col-md-6"><label>Hip</label><input type="number" id="hip" name="hip" class="form-control"></div>
+          <div class="col-md-6"><label>Knee</label><input type="number" id="knee" name="knee" class="form-control"></div>
+          <div class="col-md-6"><label>Thigh</label><input type="number" id="thigh" name="thigh" class="form-control"></div>
+        </div>
+
+        <!-- Style Reference -->
+        <h5 class="mt-4">Style Reference</h5>
+        <p>Have a design in mind? Upload a photo or describe your look.</p>
+        <input type="file" id="file" name="file" class="form-control mb-3">
+        <textarea id="look" name="look" class="form-control mb-5" rows="4" placeholder="Describe your preferred style..."></textarea>
+
+        <!-- Delivery -->
+        <h5>Delivery & Pickup</h5>
+        <label class="fw-bold">Delivery Method</label>
+        <div class="form-check">
+          <input type="radio" id="home" name="deliveryMethod" value="Home Delivery" class="form-check-input" required>
+          <label for="deliveryMethod" class="form-check-label">Home Delivery</label>
+        </div>
+        <div class="form-check mb-3">
+          <input type="radio" id="pick" name="deliveryMethod" value="Pickup" class="form-check-input" required>
+          <label for="deliveryMethod" class="form-check-label">Pickup</label>
+        </div>
+
+        <div class="mb-3">
+          <label for="address">Delivery Address</label>
+          <textarea id="address" name="address" class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label for="calendar">Preferred Delivery Date</label>
+          <input type="text" id="calendar" name="date" class="form-control" placeholder="Choose a date" required>
+        </div>
+
+        <!-- Extra Notes -->
+        <h5>Extra Notes</h5>
+        <textarea id="notes" name="notes" class="form-control mb-4" rows="4" placeholder="Include embroidery or inner lining preferences..."></textarea>
+
+        <button type="submit" class="btn btn-dark fw-bold px-4">Place Order</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="pt-5 bg-dark text-white">
+    <div class="container px-3">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <img src="assets/images/logo-bg.png" alt="Veo Logo" class="img-fluid mb-3" style="width: 150px;">
+          <p>Crafting excellence in Nigerian menswear since 2008. Where tradition meets contemporary luxury.</p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <h5>Quick Links</h5>
+          <p><a href="about.html" class="text-white text-decoration-none">About Us</a></p>
+          <p><a href="service.html" class="text-white text-decoration-none">Services</a></p>
+          <p><a href="index.html#contact" class="text-white text-decoration-none">Contact</a></p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <h5>Services</h5>
+          <p><a href="service.html#custom" class="text-white text-decoration-none">Custom Tailoring</a></p>
+          <p><a href="service.html#wedding" class="text-white text-decoration-none">Wedding Outfits</a></p>
+          <p><a href="service.html#traditional" class="text-white text-decoration-none">Traditional Wear</a></p>
+          <p><a href="service.html#alteration" class="text-white text-decoration-none">Alterations</a></p>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <h5>Connect</h5>
+          <p><i class="bi bi-envelope-fill text-warning"></i> veoclothings@gmail.com</p>
+          <p><i class="bi bi-geo-alt-fill text-warning"></i> No 10, Surulere Street, Osun State, NG</p>
+          <p><i class="bi bi-telephone-fill text-warning"></i> +234-706-796-7155</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <p class="text-center mb-0">&copy; 2025 Veo Clothings. All Rights Reserved.</p>
+    </div>
+  </footer>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  // Initialize EmailJS
+  emailjs.init("5NyKgnnhzFryxDzJI"); // your public key
+
+  // Initialize Flatpickr
+  flatpickr("#calendar", { dateFormat: "Y-m-d", minDate: "today" });
+
+  const form = document.getElementById("bookForm");
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // Gather all input values
+    const name = document.getElementById("name").value;
+    const number = document.getElementById("number").value;
+    const email = document.getElementById("email").value;
+    const type = document.getElementById("type").value;
+    const occasion = document.getElementById("occasion").value;
+    const color = document.getElementById("color").value;
+    const chest = document.getElementById("chest").value;
+    const shoulder = document.getElementById("shoulder").value;
+    const sleeve = document.getElementById("sleeve").value;
+    const waist = document.getElementById("waist").value;
+    const trouser = document.getElementById("trouser").value;
+    const neck = document.getElementById("neck").value;
+    const hip = document.getElementById("hip").value;
+    const knee = document.getElementById("knee").value;
+    const thigh = document.getElementById("thigh").value;
+    const look = document.getElementById("look").value;
+    const notes = document.getElementById("notes").value;
+    const delivery = document.querySelector('input[name="deliveryMethod"]:checked')?.value || '';
+    const address = document.getElementById("address").value;
+    const date = document.getElementById("calendar").value;
+
+    // Gather selected fabrics
+    const fabrics = [];
+    document.querySelectorAll('input[type="checkbox"]:checked').forEach(cb => fabrics.push(cb.value));
+
+    // Prepare template parameters
+    const templateParams = {
+      name,
+      number,
+      email,
+      type,
+      occasion,
+      fabrics: fabrics.join(", "),
+      color,
+      chest,
+      shoulder,
+      sleeve,
+      waist,
+      trouser,
+      neck,
+      hip,
+      knee,
+      thigh,
+      look,
+      notes,
+      delivery,
+      address,
+      date
+    };
+
+    // Send email to owner
+    emailjs.send('service_vczywg5', 'template_wjviudm', templateParams)
+      .then(res => console.log('Owner email sent', res.status, res.text))
+      .catch(err => console.error('Owner email error', err));
+
+    // Send confirmation email to client
+    emailjs.send('service_vczywg5', 'template_6da7kfh', templateParams)
+      .then(res => console.log('Client email sent', res.status, res.text))
+      .catch(err => console.error('Client email error', err));
+
+    alert("Your order has been submitted successfully!");
+    form.reset();
+  });
+</script>
+
+
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
